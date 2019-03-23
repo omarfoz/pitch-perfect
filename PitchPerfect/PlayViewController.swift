@@ -20,6 +20,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var snailButton: UIButton!
     
+    
     var audioRecorder: AVAudioRecorder!
     var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
@@ -34,12 +35,14 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         snailButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         rabbitButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         chipmunkButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         echoButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         reverbButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         vaderButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        
         setupAudio()
     }
     

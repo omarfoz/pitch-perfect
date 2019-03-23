@@ -87,7 +87,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             statusRecording.textColor = UIColor.lightText
         }else {
              statusRecording.text = "Recording in Progress"
-             statusRecording.textColor = UIColor.green
+             statusRecording.textColor = UIColor.cyan
         }
     }
     
