@@ -82,13 +82,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         stopRecordButton.isEnabled = !enabled
         recordButton.isHidden = !enabled
         recordButton.isEnabled = enabled
-        if enabled {
-            statusRecording.text = "Tap to start recording "
-            statusRecording.textColor = UIColor.lightText
-        }else {
-             statusRecording.text = "Recording in Progress"
-             statusRecording.textColor = UIColor.cyan
-        }
+        statusRecording.text = enabled ? "Tap to start recording " : "Recording in Progress"
+        statusRecording.textColor = enabled ? UIColor.lightText : UIColor.cyan
+       
     }
     
     
